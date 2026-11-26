@@ -1,0 +1,1263 @@
+{
+  "users": [
+    {
+      "_id": "user_super_admin",
+      "name": "Raghuraj Pratap Singh",
+      "email": "raghurajpratapsingh8787@gmail.com",
+      "passwordHash": "",
+      "role": "super_admin",
+      "phone": "+1 (415) 555-0192",
+      "isActive": true,
+      "isEmailVerified": true,
+      "refreshTokens": [],
+      "createdAt": "2026-08-28T18:22:39.289Z",
+      "updatedAt": "2026-11-26T18:22:39.288Z"
+    },
+    {
+      "_id": "user_customer_1",
+      "name": "Elena Vance",
+      "email": "elena.vance@example.com",
+      "passwordHash": "",
+      "role": "customer",
+      "phone": "+1 (312) 555-0148",
+      "isActive": true,
+      "isEmailVerified": true,
+      "refreshTokens": [],
+      "createdAt": "2026-10-12T18:22:39.289Z",
+      "updatedAt": "2026-11-21T18:22:39.289Z"
+    },
+    {
+      "_id": "user_customer_2",
+      "name": "Marcus Chen",
+      "email": "marcus.chen@example.com",
+      "passwordHash": "",
+      "role": "customer",
+      "phone": "+1 (206) 555-0174",
+      "isActive": true,
+      "isEmailVerified": true,
+      "refreshTokens": [],
+      "createdAt": "2026-10-25T18:22:39.289Z",
+      "updatedAt": "2026-11-23T18:22:39.289Z"
+    }
+  ],
+  "customerProfiles": [
+    {
+      "_id": "cprof_1",
+      "userId": "user_customer_1",
+      "totalOrders": 3,
+      "totalSpent": 1769.04,
+      "newsletterSubscribed": true,
+      "supportNotes": "VIP repeat hardware buyer.",
+      "createdAt": "2026-10-12T18:22:39.289Z",
+      "updatedAt": "2026-11-26T18:22:39.294Z"
+    },
+    {
+      "_id": "cprof_2",
+      "userId": "user_customer_2",
+      "totalOrders": 2,
+      "totalSpent": 989.28,
+      "newsletterSubscribed": true,
+      "supportNotes": "Prefers signature delivery.",
+      "createdAt": "2026-10-25T18:22:39.289Z",
+      "updatedAt": "2026-11-24T18:22:39.289Z"
+    }
+  ],
+  "categories": [
+    {
+      "_id": "cat_audio",
+      "name": "Reference Audio",
+      "slug": "reference-audio",
+      "description": "Wireless studio headphones and architectural room acoustics.",
+      "image": "/src/assets/images/product_studio_headphones_1795710278477.jpg",
+      "isActive": true,
+      "createdAt": "2026-09-27T18:22:39.288Z"
+    },
+    {
+      "_id": "cat_workspace",
+      "name": "Workspace Hardware",
+      "slug": "workspace-hardware",
+      "description": "CNC aluminum keyboards and sculptural architectural desk lighting.",
+      "image": "/src/assets/images/product_mechanical_keyboard_1795710276363.jpg",
+      "isActive": true,
+      "createdAt": "2026-09-27T18:22:39.288Z"
+    },
+    {
+      "_id": "cat_carry",
+      "name": "Horology & Carry",
+      "slug": "horology-carry",
+      "description": "Automatic timepieces and full-grain Italian leather travel goods.",
+      "image": "/src/assets/images/product_chronograph_watch_1795710277300.jpg",
+      "isActive": true,
+      "createdAt": "2026-09-27T18:22:39.288Z"
+    },
+    {
+      "_id": "cat_living",
+      "name": "Ritual & Living",
+      "slug": "ritual-living",
+      "description": "Precision pour-over brewing instruments and matte ceramics.",
+      "image": "/src/assets/images/product_ceramic_espresso_1795710278723.jpg",
+      "isActive": true,
+      "createdAt": "2026-09-27T18:22:39.288Z"
+    }
+  ],
+  "brands": [
+    {
+      "_id": "brand_nordak",
+      "name": "Nordak Acoustics",
+      "slug": "nordak-acoustics",
+      "description": "Copenhagen studio sound engineering.",
+      "isActive": true,
+      "createdAt": "2026-09-27T18:22:39.288Z"
+    },
+    {
+      "_id": "brand_kestrel",
+      "name": "Kestrel Precision",
+      "slug": "kestrel-precision",
+      "description": "Machined desktop peripherals and optics.",
+      "isActive": true,
+      "createdAt": "2026-09-27T18:22:39.288Z"
+    },
+    {
+      "_id": "brand_vermeer",
+      "name": "Vermeer Studio",
+      "slug": "vermeer-studio",
+      "description": "Architectural lighting and leather ateliers.",
+      "isActive": true,
+      "createdAt": "2026-09-27T18:22:39.288Z"
+    },
+    {
+      "_id": "brand_soren",
+      "name": "Soren Horology",
+      "slug": "soren-horology",
+      "description": "Minimalist Swiss-movement timepieces.",
+      "isActive": true,
+      "createdAt": "2026-09-27T18:22:39.288Z"
+    }
+  ],
+  "products": [
+    {
+      "_id": "prod_headphones",
+      "name": "Nordak M1 Reference Wireless Headphones",
+      "slug": "nordak-m1-reference-headphones",
+      "sku": "VTX-AUD-001",
+      "description": "Precision-tuned 45mm beryllium drivers housed in matte obsidian aluminum with brushed titanium headband and adaptive hybrid active noise cancellation. Engineered for 42 hours of studio-grade playback.",
+      "categoryId": "cat_audio",
+      "brandId": "brand_nordak",
+      "price": 429,
+      "discountPrice": 369,
+      "costPrice": 195,
+      "images": [
+        "/src/assets/images/product_studio_headphones_1795710278477.jpg",
+        "/src/assets/images/hero_flagship_workspace_1795710279475.jpg"
+      ],
+      "specifications": {
+        "Driver": "45mm Beryllium Dynamic",
+        "Battery": "42 Hours ANC On",
+        "Connectivity": "Bluetooth 5.4 / USB-C Lossless",
+        "Materials": "Brushed Titanium & Lambskin"
+      },
+      "weightKg": 0.31,
+      "dimensionsCm": {
+        "length": 20,
+        "width": 17,
+        "height": 8
+      },
+      "status": "active",
+      "featured": true,
+      "trending": true,
+      "bestSeller": true,
+      "newArrival": false,
+      "averageRating": 4.9,
+      "reviewCount": 2,
+      "createdAt": "2026-10-12T18:22:39.288Z",
+      "updatedAt": "2026-11-24T18:22:39.288Z"
+    },
+    {
+      "_id": "prod_keyboard",
+      "name": "Kestrel 75 CNC Mechanical Keyboard",
+      "slug": "kestrel-75-cnc-keyboard",
+      "sku": "VTX-WRK-002",
+      "description": "Milled from a solid block of 6063 aerospace aluminum in anodized deep navy and silver. Features gasket-mounted acoustics, hot-swappable tactile switches, and a coiled braided USB-C cable.",
+      "categoryId": "cat_workspace",
+      "brandId": "brand_kestrel",
+      "price": 319,
+      "discountPrice": 279,
+      "costPrice": 142,
+      "images": [
+        "/src/assets/images/product_mechanical_keyboard_1795710276363.jpg",
+        "/src/assets/images/hero_flagship_workspace_1795710279475.jpg"
+      ],
+      "specifications": {
+        "Layout": "75% Compact ANSI",
+        "Chassis": "CNC 6063 Anodized Aluminum",
+        "Switches": "Hot-Swappable Tactile 55g",
+        "Mount": "Silicone Poron Gasket"
+      },
+      "weightKg": 1.85,
+      "dimensionsCm": {
+        "length": 32,
+        "width": 14,
+        "height": 3.4
+      },
+      "status": "active",
+      "featured": true,
+      "trending": true,
+      "bestSeller": true,
+      "newArrival": true,
+      "averageRating": 4.8,
+      "reviewCount": 1,
+      "createdAt": "2026-10-27T18:22:39.288Z",
+      "updatedAt": "2026-11-25T18:22:39.288Z"
+    },
+    {
+      "_id": "prod_watch",
+      "name": "Soren Midnight Automatic Field Watch",
+      "slug": "soren-midnight-automatic-watch",
+      "sku": "VTX-HOR-003",
+      "description": "39mm brushed 316L stainless steel case framing a sunray midnight-navy dial beneath anti-reflective sapphire crystal. Powered by a 26-jewel automatic caliber with 44-hour power reserve.",
+      "categoryId": "cat_carry",
+      "brandId": "brand_soren",
+      "price": 590,
+      "discountPrice": 520,
+      "costPrice": 265,
+      "images": [
+        "/src/assets/images/product_chronograph_watch_1795710277300.jpg"
+      ],
+      "specifications": {
+        "Case": "39mm Brushed 316L Steel",
+        "Crystal": "Domed Sapphire AR",
+        "Movement": "Automatic 28,800 vph",
+        "WaterResistance": "100m / 10 ATM"
+      },
+      "weightKg": 0.08,
+      "dimensionsCm": {
+        "length": 24,
+        "width": 4,
+        "height": 1.1
+      },
+      "status": "out_of_stock",
+      "featured": true,
+      "trending": false,
+      "bestSeller": true,
+      "newArrival": false,
+      "averageRating": 5,
+      "reviewCount": 1,
+      "createdAt": "2026-10-07T18:22:39.288Z",
+      "updatedAt": "2026-11-23T18:22:39.288Z"
+    },
+    {
+      "_id": "prod_lamp",
+      "name": "Vermeer Articulated Brass Desk Lamp",
+      "slug": "vermeer-articulated-brass-lamp",
+      "sku": "VTX-WRK-004",
+      "description": "Sculptural task illumination crafted in powder-coated obsidian steel and solid satin brass friction joints. Delivers CRI 97+ glare-free warm-to-neutral dimming from 2700K to 4500K.",
+      "categoryId": "cat_workspace",
+      "brandId": "brand_vermeer",
+      "price": 265,
+      "discountPrice": 229,
+      "costPrice": 112,
+      "images": [
+        "/src/assets/images/product_architectural_lamp_1795710280336.jpg",
+        "/src/assets/images/hero_flagship_workspace_1795710279475.jpg"
+      ],
+      "specifications": {
+        "ColorRendering": "CRI 97+ Museum Grade",
+        "ColorTemp": "2700K – 4500K Stepless",
+        "Materials": "Satin Brass & Matte Steel",
+        "Power": "14W LED / 50,000h Lifespan"
+      },
+      "weightKg": 2.2,
+      "dimensionsCm": {
+        "length": 42,
+        "width": 16,
+        "height": 48
+      },
+      "status": "active",
+      "featured": true,
+      "trending": true,
+      "bestSeller": false,
+      "newArrival": true,
+      "averageRating": 4.7,
+      "reviewCount": 1,
+      "createdAt": "2026-11-04T18:22:39.288Z",
+      "updatedAt": "2026-11-24T18:22:39.288Z"
+    },
+    {
+      "_id": "prod_weekender",
+      "name": "Vermeer Como Full-Grain Leather Weekender",
+      "slug": "vermeer-como-leather-weekender",
+      "sku": "VTX-CRY-005",
+      "description": "Hand-cut vegetable-tanned Italian pebbled leather in deep midnight navy with solid matte gunmetal hardware, padded 16-inch laptop divider, and airline cabin-compliant proportions.",
+      "categoryId": "cat_carry",
+      "brandId": "brand_vermeer",
+      "price": 485,
+      "costPrice": 218,
+      "images": [
+        "/src/assets/images/product_leather_weekender_1795710313415.jpg"
+      ],
+      "specifications": {
+        "Leather": "Full-Grain Italian Calfskin",
+        "Capacity": "38 Liters (Cabin Approved)",
+        "Hardware": "Brushed Gunmetal YKK Excella",
+        "Lining": "Water-Resistant Herringbone Cotton"
+      },
+      "weightKg": 1.65,
+      "dimensionsCm": {
+        "length": 52,
+        "width": 24,
+        "height": 30
+      },
+      "status": "active",
+      "featured": true,
+      "trending": false,
+      "bestSeller": true,
+      "newArrival": false,
+      "averageRating": 4.9,
+      "reviewCount": 1,
+      "createdAt": "2026-10-17T18:22:39.288Z",
+      "updatedAt": "2026-11-22T18:22:39.288Z"
+    },
+    {
+      "_id": "prod_speaker",
+      "name": "Nordak A2 Acoustic Home Speaker",
+      "slug": "nordak-a2-acoustic-speaker",
+      "sku": "VTX-AUD-006",
+      "description": "360-degree omnidirectional acoustic cylinder wrapped in Danish Kvadrat wool textile, crowned with a weighted CNC-knurled aluminum rotary volume dial. Supports AirPlay 2 and Wi-Fi multi-room.",
+      "categoryId": "cat_audio",
+      "brandId": "brand_nordak",
+      "price": 349,
+      "discountPrice": 299,
+      "costPrice": 156,
+      "images": [
+        "/src/assets/images/product_smart_speaker_1795710279912.jpg"
+      ],
+      "specifications": {
+        "Amplification": "90W Class-D Tri-Amp",
+        "Textile": "Kvadrat Acoustic Wool",
+        "Streaming": "Wi-Fi / AirPlay 2 / Bluetooth 5.3",
+        "Control": "Machined Aluminum Rotary Encoder"
+      },
+      "weightKg": 2.1,
+      "dimensionsCm": {
+        "length": 14,
+        "width": 14,
+        "height": 24
+      },
+      "status": "active",
+      "featured": true,
+      "trending": true,
+      "bestSeller": false,
+      "newArrival": true,
+      "averageRating": 4.8,
+      "reviewCount": 1,
+      "createdAt": "2026-11-11T18:22:39.288Z",
+      "updatedAt": "2026-11-25T18:22:39.288Z"
+    },
+    {
+      "_id": "prod_kettle",
+      "name": "Kestrel Precision Gooseneck Pour-Over Set",
+      "slug": "kestrel-precision-pour-over-set",
+      "sku": "VTX-LIV-007",
+      "description": "Variable-temperature matte slate stainless gooseneck kettle paired with a hand-cast ribbed porcelain dripper and borosilicate carafe. Maintains 1-degree thermal accuracy for clean extraction.",
+      "categoryId": "cat_living",
+      "brandId": "brand_kestrel",
+      "price": 195,
+      "discountPrice": 169,
+      "costPrice": 82,
+      "images": [
+        "/src/assets/images/product_ceramic_espresso_1795710278723.jpg"
+      ],
+      "specifications": {
+        "Capacity": "900ml Kettle / 600ml Carafe",
+        "TempRange": "60°C – 100°C PID Controlled",
+        "Dripper": "Ribbed Matte Porcelain V02",
+        "Finish": "Slate Ceramic Coating & Walnut"
+      },
+      "weightKg": 1.4,
+      "dimensionsCm": {
+        "length": 28,
+        "width": 18,
+        "height": 22
+      },
+      "status": "active",
+      "featured": false,
+      "trending": true,
+      "bestSeller": false,
+      "newArrival": true,
+      "averageRating": 4.9,
+      "reviewCount": 1,
+      "createdAt": "2026-11-14T18:22:39.288Z",
+      "updatedAt": "2026-11-25T18:22:39.288Z"
+    },
+    {
+      "_id": "prod_desk_bundle",
+      "name": "Veltrix Executive Studio Desk Ensemble",
+      "slug": "veltrix-executive-studio-ensemble",
+      "sku": "VTX-WRK-008",
+      "description": "Curated flagship workspace bundle pairing our CNC mechanical keyboard, articulated brass task lamp, and slate leather desk mat at a collector edition saving.",
+      "categoryId": "cat_workspace",
+      "brandId": "brand_kestrel",
+      "price": 640,
+      "discountPrice": 549,
+      "costPrice": 290,
+      "images": [
+        "/src/assets/images/hero_flagship_workspace_1795710279475.jpg",
+        "/src/assets/images/product_mechanical_keyboard_1795710276363.jpg",
+        "/src/assets/images/product_architectural_lamp_1795710280336.jpg"
+      ],
+      "specifications": {
+        "Includes": "Keyboard + Brass Lamp + Slate Mat",
+        "Edition": "Numbered Studio Release",
+        "Warranty": "3-Year Hardware Coverage",
+        "Packaging": "Recycled Felt Presentation Box"
+      },
+      "weightKg": 4.5,
+      "dimensionsCm": {
+        "length": 55,
+        "width": 35,
+        "height": 18
+      },
+      "status": "active",
+      "featured": false,
+      "trending": true,
+      "bestSeller": true,
+      "newArrival": true,
+      "averageRating": 5,
+      "reviewCount": 0,
+      "createdAt": "2026-11-18T18:22:39.288Z",
+      "updatedAt": "2026-11-26T18:22:39.288Z"
+    }
+  ],
+  "productVariants": [
+    {
+      "_id": "var_1",
+      "productId": "prod_headphones",
+      "skuSuffix": "OBS",
+      "color": "Obsidian Black",
+      "size": "Standard",
+      "priceDelta": 0,
+      "stockQuantity": 16
+    },
+    {
+      "_id": "var_2",
+      "productId": "prod_headphones",
+      "skuSuffix": "TIT",
+      "color": "Brushed Titanium",
+      "size": "Standard",
+      "priceDelta": 20,
+      "stockQuantity": 8
+    },
+    {
+      "_id": "var_3",
+      "productId": "prod_keyboard",
+      "skuSuffix": "NVY-TAC",
+      "color": "Midnight Navy",
+      "size": "Tactile Switches",
+      "priceDelta": 0,
+      "stockQuantity": 12
+    },
+    {
+      "_id": "var_4",
+      "productId": "prod_keyboard",
+      "skuSuffix": "SLV-LIN",
+      "color": "Anodized Silver",
+      "size": "Linear Switches",
+      "priceDelta": 0,
+      "stockQuantity": 7
+    },
+    {
+      "_id": "var_5",
+      "productId": "prod_watch",
+      "skuSuffix": "39-NVY",
+      "color": "Midnight Dial",
+      "size": "39mm",
+      "priceDelta": 0,
+      "stockQuantity": 4
+    },
+    {
+      "_id": "var_6",
+      "productId": "prod_weekender",
+      "skuSuffix": "NVY-38L",
+      "color": "Midnight Navy",
+      "size": "38L Cabin",
+      "priceDelta": 0,
+      "stockQuantity": 3
+    }
+  ],
+  "inventories": [
+    {
+      "_id": "inv_1",
+      "productId": "prod_headphones",
+      "stockQuantity": 24,
+      "reservedQuantity": 0,
+      "minStockLevel": 8,
+      "warehouseLocation": "Bay A-01",
+      "lastRestockedAt": "2026-11-14T18:22:39.288Z",
+      "updatedAt": "2026-11-25T18:22:39.288Z"
+    },
+    {
+      "_id": "inv_2",
+      "productId": "prod_keyboard",
+      "stockQuantity": 19,
+      "reservedQuantity": 0,
+      "minStockLevel": 6,
+      "warehouseLocation": "Bay A-04",
+      "lastRestockedAt": "2026-11-16T18:22:39.288Z",
+      "updatedAt": "2026-11-25T18:22:39.288Z"
+    },
+    {
+      "_id": "inv_3",
+      "productId": "prod_watch",
+      "stockQuantity": 0,
+      "reservedQuantity": 0,
+      "minStockLevel": 6,
+      "warehouseLocation": "Vault V-02",
+      "lastRestockedAt": "2026-11-06T18:22:39.288Z",
+      "updatedAt": "2026-11-26T18:22:39.294Z"
+    },
+    {
+      "_id": "inv_4",
+      "productId": "prod_lamp",
+      "stockQuantity": 14,
+      "reservedQuantity": 0,
+      "minStockLevel": 5,
+      "warehouseLocation": "Bay B-02",
+      "lastRestockedAt": "2026-11-12T18:22:39.288Z",
+      "updatedAt": "2026-11-24T18:22:39.288Z"
+    },
+    {
+      "_id": "inv_5",
+      "productId": "prod_weekender",
+      "stockQuantity": 3,
+      "reservedQuantity": 0,
+      "minStockLevel": 5,
+      "warehouseLocation": "Bay C-01",
+      "lastRestockedAt": "2026-11-01T18:22:39.288Z",
+      "updatedAt": "2026-11-23T18:22:39.288Z"
+    },
+    {
+      "_id": "inv_6",
+      "productId": "prod_speaker",
+      "stockQuantity": 22,
+      "reservedQuantity": 0,
+      "minStockLevel": 6,
+      "warehouseLocation": "Bay A-02",
+      "lastRestockedAt": "2026-11-17T18:22:39.288Z",
+      "updatedAt": "2026-11-25T18:22:39.288Z"
+    },
+    {
+      "_id": "inv_7",
+      "productId": "prod_kettle",
+      "stockQuantity": 31,
+      "reservedQuantity": 0,
+      "minStockLevel": 8,
+      "warehouseLocation": "Bay D-03",
+      "lastRestockedAt": "2026-11-19T18:22:39.288Z",
+      "updatedAt": "2026-11-25T18:22:39.288Z"
+    },
+    {
+      "_id": "inv_8",
+      "productId": "prod_desk_bundle",
+      "stockQuantity": 6,
+      "reservedQuantity": 0,
+      "minStockLevel": 4,
+      "warehouseLocation": "Bay A-09",
+      "lastRestockedAt": "2026-11-20T18:22:39.288Z",
+      "updatedAt": "2026-11-26T18:22:39.288Z"
+    }
+  ],
+  "stockMovements": [
+    {
+      "_id": "sm_6f631753c619",
+      "productId": "prod_watch",
+      "type": "sale",
+      "quantityDelta": -1,
+      "previousStock": 1,
+      "newStock": 0,
+      "referenceType": "ORDER",
+      "referenceId": "VTX-2026-1005",
+      "reason": "Order VTX-2026-1005 placed",
+      "performedBy": "user_customer_1",
+      "performedByName": "Elena Vance",
+      "createdAt": "2026-11-26T18:22:39.294Z"
+    },
+    {
+      "_id": "sm_1",
+      "productId": "prod_headphones",
+      "type": "purchase",
+      "quantityDelta": 25,
+      "previousStock": 0,
+      "newStock": 25,
+      "referenceType": "PO",
+      "referenceId": "PO-2026-0018",
+      "reason": "Initial warehouse intake",
+      "performedBy": "user_super_admin",
+      "performedByName": "Raghuraj Pratap Singh",
+      "createdAt": "2026-10-27T18:22:39.289Z"
+    },
+    {
+      "_id": "sm_2",
+      "productId": "prod_headphones",
+      "type": "sale",
+      "quantityDelta": -1,
+      "previousStock": 25,
+      "newStock": 24,
+      "referenceType": "ORDER",
+      "referenceId": "VTX-2026-1001",
+      "reason": "Customer order fulfillment",
+      "performedBy": "user_customer_1",
+      "performedByName": "Elena Vance",
+      "createdAt": "2026-11-02T18:22:39.289Z"
+    },
+    {
+      "_id": "sm_3",
+      "productId": "prod_watch",
+      "type": "sale",
+      "quantityDelta": -1,
+      "previousStock": 5,
+      "newStock": 4,
+      "referenceType": "ORDER",
+      "referenceId": "VTX-2026-1002",
+      "reason": "Customer order fulfillment",
+      "performedBy": "user_customer_2",
+      "performedByName": "Marcus Chen",
+      "createdAt": "2026-11-12T18:22:39.289Z"
+    },
+    {
+      "_id": "sm_4",
+      "productId": "prod_weekender",
+      "type": "sale",
+      "quantityDelta": -1,
+      "previousStock": 4,
+      "newStock": 3,
+      "referenceType": "ORDER",
+      "referenceId": "VTX-2026-1004",
+      "reason": "Customer order allocation",
+      "performedBy": "user_customer_2",
+      "performedByName": "Marcus Chen",
+      "createdAt": "2026-11-24T18:22:39.289Z"
+    }
+  ],
+  "carts": [],
+  "wishlists": [],
+  "orders": [
+    {
+      "_id": "ord_ef36c05e3157",
+      "orderNumber": "VTX-2026-1005",
+      "userId": "user_customer_1",
+      "status": "confirmed",
+      "shippingAddress": {
+        "customerName": "Buyer Test",
+        "phone": "+1 555 0100",
+        "email": "buyer@example.com",
+        "address": "100 Market St",
+        "city": "San Francisco",
+        "state": "CA",
+        "postalCode": "94105",
+        "country": "United States"
+      },
+      "subtotal": 520,
+      "discount": 0,
+      "shippingFee": 0,
+      "tax": 41.6,
+      "totalAmount": 561.6,
+      "paymentMethod": "cod",
+      "paymentStatus": "pending",
+      "notes": "",
+      "idempotencyKey": "idem_race_1",
+      "timeline": [
+        {
+          "status": "pending",
+          "note": "Order placed",
+          "timestamp": "2026-11-26T18:22:39.294Z"
+        },
+        {
+          "status": "confirmed",
+          "note": "Cash on Delivery confirmed & inventory allocated",
+          "timestamp": "2026-11-26T18:22:39.294Z"
+        }
+      ],
+      "createdAt": "2026-11-26T18:22:39.294Z",
+      "updatedAt": "2026-11-26T18:22:39.294Z"
+    },
+    {
+      "_id": "ord_1001",
+      "orderNumber": "VTX-2026-1001",
+      "userId": "user_customer_1",
+      "status": "delivered",
+      "shippingAddress": {
+        "customerName": "Elena Vance",
+        "phone": "+1 (312) 555-0148",
+        "email": "elena.vance@example.com",
+        "address": "742 West Fulton Market, Suite 400",
+        "city": "Chicago",
+        "state": "IL",
+        "postalCode": "60661",
+        "country": "United States"
+      },
+      "subtotal": 648,
+      "discount": 64.8,
+      "shippingFee": 0,
+      "tax": 46.66,
+      "totalAmount": 629.86,
+      "couponCode": "WELCOME10",
+      "paymentMethod": "cod",
+      "paymentStatus": "paid",
+      "notes": "Leave with building concierge.",
+      "timeline": [
+        {
+          "status": "pending",
+          "note": "Order placed",
+          "timestamp": "2026-11-02T18:22:39.289Z"
+        },
+        {
+          "status": "confirmed",
+          "note": "Inventory verified and allocated",
+          "timestamp": "2026-11-03T18:22:39.289Z"
+        },
+        {
+          "status": "shipped",
+          "note": "Dispatched via Express Courier",
+          "timestamp": "2026-11-04T18:22:39.289Z"
+        },
+        {
+          "status": "delivered",
+          "note": "Delivered and signed",
+          "timestamp": "2026-11-06T18:22:39.289Z"
+        }
+      ],
+      "createdAt": "2026-11-02T18:22:39.289Z",
+      "updatedAt": "2026-11-06T18:22:39.289Z"
+    },
+    {
+      "_id": "ord_1002",
+      "orderNumber": "VTX-2026-1002",
+      "userId": "user_customer_2",
+      "status": "delivered",
+      "shippingAddress": {
+        "customerName": "Marcus Chen",
+        "phone": "+1 (206) 555-0174",
+        "email": "marcus.chen@example.com",
+        "address": "1205 Western Ave, Apt 9B",
+        "city": "Seattle",
+        "state": "WA",
+        "postalCode": "98101",
+        "country": "United States"
+      },
+      "subtotal": 520,
+      "discount": 0,
+      "shippingFee": 0,
+      "tax": 41.6,
+      "totalAmount": 561.6,
+      "paymentMethod": "razorpay",
+      "paymentStatus": "paid",
+      "notes": "",
+      "timeline": [
+        {
+          "status": "pending",
+          "note": "Order placed",
+          "timestamp": "2026-11-12T18:22:39.289Z"
+        },
+        {
+          "status": "confirmed",
+          "note": "Payment confirmed",
+          "timestamp": "2026-11-12T18:22:39.289Z"
+        },
+        {
+          "status": "shipped",
+          "note": "Dispatched via Insured Air",
+          "timestamp": "2026-11-14T18:22:39.289Z"
+        },
+        {
+          "status": "delivered",
+          "note": "Delivered to recipient",
+          "timestamp": "2026-11-16T18:22:39.289Z"
+        }
+      ],
+      "createdAt": "2026-11-12T18:22:39.289Z",
+      "updatedAt": "2026-11-16T18:22:39.289Z"
+    },
+    {
+      "_id": "ord_1003",
+      "orderNumber": "VTX-2026-1003",
+      "userId": "user_customer_1",
+      "status": "shipped",
+      "shippingAddress": {
+        "customerName": "Elena Vance",
+        "phone": "+1 (312) 555-0148",
+        "email": "elena.vance@example.com",
+        "address": "742 West Fulton Market, Suite 400",
+        "city": "Chicago",
+        "state": "IL",
+        "postalCode": "60661",
+        "country": "United States"
+      },
+      "subtotal": 528,
+      "discount": 0,
+      "shippingFee": 0,
+      "tax": 42.24,
+      "totalAmount": 570.24,
+      "paymentMethod": "manual",
+      "paymentStatus": "paid",
+      "notes": "Corporate workspace order",
+      "timeline": [
+        {
+          "status": "pending",
+          "note": "Order placed",
+          "timestamp": "2026-11-21T18:22:39.289Z"
+        },
+        {
+          "status": "confirmed",
+          "note": "Invoice settled",
+          "timestamp": "2026-11-22T18:22:39.289Z"
+        },
+        {
+          "status": "packed",
+          "note": "Quality checked & packed",
+          "timestamp": "2026-11-23T18:22:39.289Z"
+        },
+        {
+          "status": "shipped",
+          "note": "In transit with courier",
+          "timestamp": "2026-11-24T18:22:39.289Z"
+        }
+      ],
+      "createdAt": "2026-11-21T18:22:39.289Z",
+      "updatedAt": "2026-11-24T18:22:39.289Z"
+    },
+    {
+      "_id": "ord_1004",
+      "orderNumber": "VTX-2026-1004",
+      "userId": "user_customer_2",
+      "status": "processing",
+      "shippingAddress": {
+        "customerName": "Marcus Chen",
+        "phone": "+1 (206) 555-0174",
+        "email": "marcus.chen@example.com",
+        "address": "1205 Western Ave, Apt 9B",
+        "city": "Seattle",
+        "state": "WA",
+        "postalCode": "98101",
+        "country": "United States"
+      },
+      "subtotal": 485,
+      "discount": 25,
+      "shippingFee": 0,
+      "tax": 36.8,
+      "totalAmount": 496.8,
+      "couponCode": "SAVE25",
+      "paymentMethod": "cod",
+      "paymentStatus": "pending",
+      "notes": "Evening delivery preferred",
+      "timeline": [
+        {
+          "status": "pending",
+          "note": "Order placed",
+          "timestamp": "2026-11-24T18:22:39.289Z"
+        },
+        {
+          "status": "confirmed",
+          "note": "Order confirmed",
+          "timestamp": "2026-11-25T18:22:39.289Z"
+        },
+        {
+          "status": "processing",
+          "note": "Preparing leather garment sleeve",
+          "timestamp": "2026-11-25T18:22:39.289Z"
+        }
+      ],
+      "createdAt": "2026-11-24T18:22:39.289Z",
+      "updatedAt": "2026-11-25T18:22:39.289Z"
+    }
+  ],
+  "orderItems": [
+    {
+      "_id": "oi_1",
+      "orderId": "ord_1001",
+      "productId": "prod_headphones",
+      "productName": "Nordak M1 Reference Wireless Headphones",
+      "sku": "VTX-AUD-001",
+      "image": "/src/assets/images/product_studio_headphones_1795710278477.jpg",
+      "variantLabel": "Obsidian Black",
+      "unitPrice": 369,
+      "quantity": 1,
+      "lineTotal": 369
+    },
+    {
+      "_id": "oi_2",
+      "orderId": "ord_1001",
+      "productId": "prod_keyboard",
+      "productName": "Kestrel 75 CNC Mechanical Keyboard",
+      "sku": "VTX-WRK-002",
+      "image": "/src/assets/images/product_mechanical_keyboard_1795710276363.jpg",
+      "variantLabel": "Midnight Navy",
+      "unitPrice": 279,
+      "quantity": 1,
+      "lineTotal": 279
+    },
+    {
+      "_id": "oi_3",
+      "orderId": "ord_1002",
+      "productId": "prod_watch",
+      "productName": "Soren Midnight Automatic Field Watch",
+      "sku": "VTX-HOR-003",
+      "image": "/src/assets/images/product_chronograph_watch_1795710277300.jpg",
+      "variantLabel": "39mm",
+      "unitPrice": 520,
+      "quantity": 1,
+      "lineTotal": 520
+    },
+    {
+      "_id": "oi_4",
+      "orderId": "ord_1003",
+      "productId": "prod_lamp",
+      "productName": "Vermeer Articulated Brass Desk Lamp",
+      "sku": "VTX-WRK-004",
+      "image": "/src/assets/images/product_architectural_lamp_1795710280336.jpg",
+      "unitPrice": 229,
+      "quantity": 1,
+      "lineTotal": 229
+    },
+    {
+      "_id": "oi_5",
+      "orderId": "ord_1003",
+      "productId": "prod_speaker",
+      "productName": "Nordak A2 Acoustic Home Speaker",
+      "sku": "VTX-AUD-006",
+      "image": "/src/assets/images/product_smart_speaker_1795710279912.jpg",
+      "unitPrice": 299,
+      "quantity": 1,
+      "lineTotal": 299
+    },
+    {
+      "_id": "oi_6",
+      "orderId": "ord_1004",
+      "productId": "prod_weekender",
+      "productName": "Vermeer Como Full-Grain Leather Weekender",
+      "sku": "VTX-CRY-005",
+      "image": "/src/assets/images/product_leather_weekender_1795710313415.jpg",
+      "unitPrice": 485,
+      "quantity": 1,
+      "lineTotal": 485
+    },
+    {
+      "_id": "oi_9b5abe87bfe8",
+      "orderId": "ord_ef36c05e3157",
+      "productId": "prod_watch",
+      "productName": "Soren Midnight Automatic Field Watch",
+      "sku": "VTX-HOR-003",
+      "image": "/src/assets/images/product_chronograph_watch_1795710277300.jpg",
+      "unitPrice": 520,
+      "quantity": 1,
+      "lineTotal": 520
+    }
+  ],
+  "payments": [
+    {
+      "_id": "pay_dee929de5c34",
+      "orderId": "ord_ef36c05e3157",
+      "orderNumber": "VTX-2026-1005",
+      "userId": "user_customer_1",
+      "method": "cod",
+      "status": "pending",
+      "amount": 561.6,
+      "currency": "USD",
+      "createdAt": "2026-11-26T18:22:39.294Z"
+    },
+    {
+      "_id": "pay_1",
+      "orderId": "ord_1001",
+      "orderNumber": "VTX-2026-1001",
+      "userId": "user_customer_1",
+      "method": "cod",
+      "status": "paid",
+      "amount": 629.86,
+      "currency": "USD",
+      "verifiedAt": "2026-11-06T18:22:39.289Z",
+      "createdAt": "2026-11-02T18:22:39.289Z"
+    },
+    {
+      "_id": "pay_2",
+      "orderId": "ord_1002",
+      "orderNumber": "VTX-2026-1002",
+      "userId": "user_customer_2",
+      "method": "razorpay",
+      "status": "paid",
+      "amount": 561.6,
+      "currency": "USD",
+      "providerOrderId": "order_rzp_seed1002",
+      "providerPaymentId": "pay_rzp_seed1002",
+      "verifiedAt": "2026-11-12T18:22:39.289Z",
+      "createdAt": "2026-11-12T18:22:39.289Z"
+    },
+    {
+      "_id": "pay_3",
+      "orderId": "ord_1003",
+      "orderNumber": "VTX-2026-1003",
+      "userId": "user_customer_1",
+      "method": "manual",
+      "status": "paid",
+      "amount": 570.24,
+      "currency": "USD",
+      "verifiedAt": "2026-11-22T18:22:39.289Z",
+      "createdAt": "2026-11-21T18:22:39.289Z"
+    },
+    {
+      "_id": "pay_4",
+      "orderId": "ord_1004",
+      "orderNumber": "VTX-2026-1004",
+      "userId": "user_customer_2",
+      "method": "cod",
+      "status": "pending",
+      "amount": 496.8,
+      "currency": "USD",
+      "createdAt": "2026-11-24T18:22:39.289Z"
+    }
+  ],
+  "coupons": [
+    {
+      "_id": "coup_1",
+      "code": "WELCOME10",
+      "type": "percentage",
+      "value": 10,
+      "minOrderValue": 150,
+      "maxDiscount": 120,
+      "usageLimit": 250,
+      "usedCount": 1,
+      "usedByUsers": [
+        "user_customer_1"
+      ],
+      "eligibleCategoryIds": [],
+      "eligibleProductIds": [],
+      "expiresAt": "2027-05-25T18:22:39.289Z",
+      "isActive": true,
+      "createdAt": "2026-09-27T18:22:39.289Z"
+    },
+    {
+      "_id": "coup_2",
+      "code": "SAVE25",
+      "type": "fixed",
+      "value": 25,
+      "minOrderValue": 200,
+      "usageLimit": 100,
+      "usedCount": 1,
+      "usedByUsers": [
+        "user_customer_2"
+      ],
+      "eligibleCategoryIds": [],
+      "eligibleProductIds": [],
+      "expiresAt": "2027-02-24T18:22:39.289Z",
+      "isActive": true,
+      "createdAt": "2026-10-27T18:22:39.289Z"
+    },
+    {
+      "_id": "coup_3",
+      "code": "STUDIO15",
+      "type": "percentage",
+      "value": 15,
+      "minOrderValue": 300,
+      "maxDiscount": 150,
+      "usageLimit": 50,
+      "usedCount": 0,
+      "usedByUsers": [],
+      "eligibleCategoryIds": [
+        "cat_audio",
+        "cat_workspace"
+      ],
+      "eligibleProductIds": [],
+      "expiresAt": "2027-01-25T18:22:39.289Z",
+      "isActive": true,
+      "createdAt": "2026-11-16T18:22:39.289Z"
+    }
+  ],
+  "reviews": [
+    {
+      "_id": "rev_1",
+      "productId": "prod_headphones",
+      "userId": "user_customer_1",
+      "userName": "Elena Vance",
+      "orderId": "ord_1001",
+      "rating": 5,
+      "title": "Reference clarity with zero listening fatigue",
+      "comment": "Switched from studio monitors during late sessions. The titanium headband balances the weight effortlessly and USB-C lossless mode is remarkably transparent.",
+      "isApproved": true,
+      "createdAt": "2026-11-08T18:22:39.289Z",
+      "updatedAt": "2026-11-08T18:22:39.289Z"
+    },
+    {
+      "_id": "rev_2",
+      "productId": "prod_keyboard",
+      "userId": "user_customer_1",
+      "userName": "Elena Vance",
+      "orderId": "ord_1001",
+      "rating": 5,
+      "title": "Machined like a precision camera body",
+      "comment": "Deep, muted typing acoustics straight out of the box. The anodized midnight navy finish looks architectural on a walnut desk.",
+      "isApproved": true,
+      "createdAt": "2026-11-09T18:22:39.289Z",
+      "updatedAt": "2026-11-09T18:22:39.289Z"
+    },
+    {
+      "_id": "rev_3",
+      "productId": "prod_watch",
+      "userId": "user_customer_2",
+      "userName": "Marcus Chen",
+      "orderId": "ord_1002",
+      "rating": 5,
+      "title": "Understated dial depth and crisp regulation",
+      "comment": "Runs +2 seconds a day after a week on the wrist. The 39mm case slips neatly under a cuff and the sapphire anti-reflective coating disappears in daylight.",
+      "isApproved": true,
+      "createdAt": "2026-11-18T18:22:39.289Z",
+      "updatedAt": "2026-11-18T18:22:39.289Z"
+    }
+  ],
+  "suppliers": [
+    {
+      "_id": "sup_1",
+      "name": "Nordak Nordic Audio A/S",
+      "company": "Nordak Industrial Group",
+      "email": "supply@nordak-audio.example.com",
+      "phone": "+45 33 14 28 90",
+      "address": "Bredgade 45, 1260 Copenhagen, Denmark",
+      "contactPerson": "Henrik Lindqvist",
+      "status": "active",
+      "suppliedProductIds": [
+        "prod_headphones",
+        "prod_speaker"
+      ],
+      "createdAt": "2026-09-07T18:22:39.289Z"
+    },
+    {
+      "_id": "sup_2",
+      "name": "Atelier Vermeer & Precision Mfg",
+      "company": "Vermeer Hardware SRL",
+      "email": "orders@vermeer-atelier.example.com",
+      "phone": "+39 02 8941 5520",
+      "address": "Via Tortona 31, 20144 Milano, Italy",
+      "contactPerson": "Chiara Bellini",
+      "status": "active",
+      "suppliedProductIds": [
+        "prod_keyboard",
+        "prod_lamp",
+        "prod_weekender",
+        "prod_kettle"
+      ],
+      "createdAt": "2026-09-12T18:22:39.289Z"
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "_id": "po_1",
+      "poNumber": "PO-2026-0041",
+      "supplierId": "sup_2",
+      "status": "approved",
+      "totalCost": 2470,
+      "expectedDeliveryDate": "2026-12-01T18:22:39.289Z",
+      "notes": "Restock order for low-stock leather weekenders and brass lamps.",
+      "createdBy": "user_super_admin",
+      "createdAt": "2026-11-23T18:22:39.289Z",
+      "updatedAt": "2026-11-24T18:22:39.289Z"
+    }
+  ],
+  "purchaseOrderItems": [
+    {
+      "_id": "poi_1",
+      "purchaseOrderId": "po_1",
+      "productId": "prod_weekender",
+      "productName": "Vermeer Como Full-Grain Leather Weekender",
+      "sku": "VTX-CRY-005",
+      "quantityOrdered": 8,
+      "quantityReceived": 0,
+      "unitCost": 218
+    },
+    {
+      "_id": "poi_2",
+      "purchaseOrderId": "po_1",
+      "productId": "prod_lamp",
+      "productName": "Vermeer Articulated Brass Desk Lamp",
+      "sku": "VTX-WRK-004",
+      "quantityOrdered": 6,
+      "quantityReceived": 0,
+      "unitCost": 112
+    }
+  ],
+  "addresses": [],
+  "notifications": [
+    {
+      "_id": "notif_9c09d0c0500b",
+      "recipientRole": "super_admin",
+      "type": "new_order",
+      "title": "New order VTX-2026-1005",
+      "message": "Buyer Test placed an order for $561.60.",
+      "isRead": false,
+      "link": "/admin/orders",
+      "createdAt": "2026-11-26T18:22:39.294Z"
+    },
+    {
+      "_id": "notif_8c28ae788f51",
+      "recipientRole": "super_admin",
+      "type": "low_stock",
+      "title": "Low stock: Soren Midnight Automatic Field Watch",
+      "message": "Only 0 unit(s) left (min threshold: 6).",
+      "isRead": false,
+      "link": "/admin/inventory",
+      "createdAt": "2026-11-26T18:22:39.294Z"
+    },
+    {
+      "_id": "notif_1",
+      "recipientRole": "super_admin",
+      "type": "low_stock",
+      "title": "Low stock alert: Soren Midnight Automatic Field Watch",
+      "message": "Remaining stock (4 units) is below the minimum threshold of 6 units.",
+      "isRead": false,
+      "link": "/admin/inventory",
+      "createdAt": "2026-11-24T18:22:39.289Z"
+    },
+    {
+      "_id": "notif_2",
+      "recipientRole": "super_admin",
+      "type": "low_stock",
+      "title": "Low stock alert: Vermeer Como Leather Weekender",
+      "message": "Remaining stock (3 units) is below the minimum threshold of 5 units. PO-2026-0041 approved.",
+      "isRead": false,
+      "link": "/admin/purchases",
+      "createdAt": "2026-11-25T18:22:39.289Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "_id": "aud_1",
+      "actorId": "user_super_admin",
+      "actorEmail": "raghurajpratapsingh8787@gmail.com",
+      "actorRole": "super_admin",
+      "action": "PURCHASE_ORDER_APPROVED",
+      "entityType": "PurchaseOrder",
+      "entityId": "po_1",
+      "details": {
+        "poNumber": "PO-2026-0041",
+        "totalCost": 2470
+      },
+      "ipAddress": "127.0.0.1",
+      "createdAt": "2026-11-24T18:22:39.289Z"
+    }
+  ],
+  "newsletters": [
+    {
+      "email": "elena.vance@example.com",
+      "subscribedAt": "2026-10-17T18:22:39.289Z"
+    }
+  ],
+  "settings": {
+    "storeName": "Veltrix Commerce",
+    "ownerName": "Raghuraj Pratap Singh",
+    "ownerEmail": "raghurajpratapsingh8787@gmail.com",
+    "supportPhone": "+1 (415) 555-0192",
+    "currency": "USD",
+    "freeShippingThreshold": 250,
+    "standardShippingFee": 18,
+    "taxRate": 0.08,
+    "lowStockDefaultThreshold": 5,
+    "stockReservationPolicy": "deduct_on_order",
+    "adminClaimed": false
+  }
+}

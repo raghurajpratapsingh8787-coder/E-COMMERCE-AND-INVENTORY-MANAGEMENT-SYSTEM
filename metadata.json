@@ -1,0 +1,8 @@
+{
+  "name": "Veltrix Commerce",
+  "description": "Full-stack E-Commerce and Inventory Management System with real-time stock control, role-based admin analytics, supplier purchase orders, and secure checkout by Raghuraj Pratap Singh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
